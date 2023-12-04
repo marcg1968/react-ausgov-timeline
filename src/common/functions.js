@@ -280,6 +280,4 @@ export const pmlist = () => {
         diff = diff / ( 86400 * 1000 * 100 )
         return [ ..._arr, isNaN(diff) ? 1 : diff.toFixed(2) ]
     })
-    // console.log(268, arr)
-    // return arr
 }
