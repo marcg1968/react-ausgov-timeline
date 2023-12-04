@@ -276,7 +276,7 @@ export const pmlist = () => {
                 return r ? r[1] : e
             })
         let diff = (new Date(_arr[4])).valueOf() - (new Date(_arr[3])).valueOf()
-        console.log(277, diff, isNaN(diff))
+        // console.log(277, diff, isNaN(diff))
         diff = diff / ( 86400 * 1000 * 100 )
         return [ ..._arr, isNaN(diff) ? 1 : diff.toFixed(2) ]
     })
