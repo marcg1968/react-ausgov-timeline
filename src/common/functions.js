@@ -281,3 +281,134 @@ export const pmlist = () => {
         return [ ..._arr, isNaN(diff) ? 1 : diff.toFixed(2) ]
     })
 }
+
+/* on https://www.naa.gov.au/explore-collection/australias-prime-ministers
+arr = Array.from(document.querySelectorAll('.featured-item-feature-thumb-summary a[hreflang="en"]')).map(e => ({pm: e.innerHTML, href: e.href}))
+
+*/
+export const naaPMlinks = [
+    {
+        "pm": "Edmund Barton",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/edmund-barton"
+    },
+    {
+        "pm": "Alfred Deakin",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/alfred-deakin"
+    },
+    {
+        "pm": "Chris Watson",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/chris-watson"
+    },
+    {
+        "pm": "George Reid",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/george-reid"
+    },
+    {
+        "pm": "Andrew Fisher",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/andrew-fisher"
+    },
+    {
+        "pm": "Joseph Cook",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/joseph-cook"
+    },
+    {
+        "pm": "William Hughes",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/william-hughes"
+    },
+    {
+        "pm": "Stanley Bruce",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/stanley-bruce"
+    },
+    {
+        "pm": "James Scullin",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/james-scullin"
+    },
+    {
+        "pm": "Joseph Lyons",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/joseph-lyons"
+    },
+    {
+        "pm": "Earle Page",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/earle-page"
+    },
+    {
+        "pm": "Robert Menzies",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/robert-menzies"
+    },
+    {
+        "pm": "Arthur Fadden",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/arthur-fadden"
+    },
+    {
+        "pm": "John Curtin",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/john-curtin"
+    },
+    {
+        "pm": "Francis Forde",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/francis-forde"
+    },
+    {
+        "pm": "Ben Chifley",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/ben-chifley"
+    },
+    {
+        "pm": "Harold Holt",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/harold-holt"
+    },
+    {
+        "pm": "John McEwen",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/john-mcewen"
+    },
+    {
+        "pm": "John Gorton",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/john-gorton"
+    },
+    {
+        "pm": " William McMahon",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/william-mcmahon"
+    },
+    {
+        "pm": "Gough Whitlam",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/gough-whitlam"
+    },
+    {
+        "pm": "Malcolm Fraser",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/malcolm-fraser"
+    },
+    {
+        "pm": " Robert Hawke",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/robert-hawke"
+    },
+    {
+        "pm": "Paul Keating",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/paul-keating"
+    },
+    {
+        "pm": "John Howard",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/john-howard"
+    },
+    {
+        "pm": "Kevin Rudd",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/kevin-rudd"
+    },
+    {
+        "pm": "Julia Gillard",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/julia-gillard"
+    },
+    {
+        "pm": "Tony Abbott",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/tony-abbott"
+    },
+    {
+        "pm": "Malcolm Turnbull",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/malcolm-turnbull"
+    },
+    {
+        "pm": "Scott Morrison",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/scott-morrison"
+    },
+    {
+        "pm": "Anthony Albanese",
+        "href": "https://www.naa.gov.au/explore-collection/australias-prime-ministers/anthony-albanese"
+    }
+]
