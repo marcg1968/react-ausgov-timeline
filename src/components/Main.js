@@ -1,9 +1,17 @@
 // Main.js
 
 import React, { useEffect, useState } from 'react'
-import { Layout, Space } from 'antd'
+import {
+    FloatButton,
+    Layout,
+    Space,
+} from 'antd'
 import MyTimeline from './MyTimeline'
-const { Header, Footer, Content } = Layout
+const {
+    Header,
+    Footer,
+    Content,
+} = Layout
 
 const contentStyle = {
     textAlign: 'center',
@@ -77,6 +85,7 @@ const Main = () => {
                 <Footer style={footerStyle}>
                     &copy; Copyright {(new Date()).getFullYear()} &mdash; <a href="https://marcgreyling.tech" target="_blank">Marc Greyling</a>
                 </Footer>
+                <FloatButton.BackTop />
             </Layout>
         </Space>
     )
