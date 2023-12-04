@@ -25,14 +25,19 @@ const listOfPMs = arr.map((e, i) => ({
     position: e[5].match(/Labor/) ? 'left' : 'right',
 }))
 
-const MyTimeline = () => (
-    <Space direction="vertical" size="middle" style={{ display: 'flex', paddingTop: '3rem', }}>
-        <Timeline
-            reverse={true}
-            mode="alternate"
-            items={listOfPMs}
-        />
-    </Space>
-)
+const MyTimeline = props => {
+
+    const { dims } = props
+
+    return (
+        <Space direction="vertical" size="middle" style={{ display: 'flex', paddingTop: '3rem', }}>
+            <Timeline
+                reverse={true}
+                mode="alternate"
+                items={listOfPMs}
+            />
+        </Space>
+    )
+}
 
 export default MyTimeline
