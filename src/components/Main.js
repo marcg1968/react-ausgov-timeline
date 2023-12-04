@@ -11,7 +11,7 @@ const headerStyle = {
     height: 100,
     // paddingInline: 50,
     // lineHeight: '64px',
-    backgroundColor: '#7dbcea',
+    // backgroundColor: '#7dbcea',
     backgroundColor: 'rgb(13, 94, 153)',
 };
 const contentStyle = {
