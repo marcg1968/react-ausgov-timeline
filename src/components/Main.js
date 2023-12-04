@@ -47,7 +47,9 @@ const Main = () => {
                 <Content style={contentStyle}>
                     <MyTimeline />
                 </Content>
-                <Footer style={footerStyle}>Footer</Footer>
+                <Footer style={footerStyle}>
+                    &copy; Copyright {(new Date()).getFullYear()} &mdash; <a href="https://marcgreyling.tech" target="_blank">Marc Greyling</a>
+                </Footer>
             </Layout>
         </Space>
     )
