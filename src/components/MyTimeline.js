@@ -66,6 +66,8 @@ const listOfPMs = arr.map((e, i) => ({
 
 const MyTimeline = () => (
     <Space direction="vertical" size="middle" style={{ display: 'flex', paddingTop: '3rem', }}>
+        {/* <div><Avatar style={{ backgroundColor: 'blue', position: 'absolute', left: '30px', top: '18px' }} icon={<UserOutlined />} /></div> */}
+        {/* <div><Avatar style={{ backgroundColor: 'red',  position: 'absolute', left: '67px', top: '18px' }} icon={<UserOutlined />} /></div> */}
         <Timeline
             reverse={true}
             mode="alternate"
