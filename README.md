@@ -33,6 +33,5 @@ HOST=""
 FP=""
 rsync -avr -e "ssh -p $PORT" --delete-before ./build/static/ ${USER}@${HOST}:${FP} && \
     rsync -avr -e "ssh -p $PORT" ./build/ ${USER}@${HOST}:${FP}
-
 ```
 

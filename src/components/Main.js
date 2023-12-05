@@ -7,6 +7,8 @@ import {
     Space,
 } from 'antd'
 import MyTimeline from './MyTimeline'
+import '../assets/css/main.css'
+
 const {
     Header,
     Footer,
@@ -21,7 +23,8 @@ const contentStyle = {
 const footerStyle = {
     textAlign: 'center',
     color: '#fff',
-    backgroundColor: '#7dbcea',
+    // backgroundColor: '#7dbcea',
+    backgroundColor: 'rgb(13, 94, 153)',
 }
 const h1Style = {
     margin: 0,
@@ -69,7 +72,7 @@ const Main = () => {
         <Space
             direction="vertical"
             style={{ width: '100%', }}
-            size={[0, 48]}
+            // size={[0, 48]}
         >
             <Layout>
                 <Header style={headerStyle}>
@@ -77,13 +80,13 @@ const Main = () => {
                     <h1 style={h1Style}>Timeline of Australian Prime Ministers</h1>
                     <h2 style={h2Style}>(in reverse chronological order)</h2>
                 </Header>
-                <Content style={contentStyle}>
-                    <MyTimeline
-                        {...dims}
-                    />
+                <Content 
+                    style={contentStyle}
+                >
+                    <MyTimeline />
                 </Content>
-                <Footer style={footerStyle}>
-                    &copy; Copyright {(new Date()).getFullYear()} &mdash; <a href="https://marcgreyling.tech" target="_blank">Marc Greyling</a>
+                <Footer style={footerStyle} className="main-footer"> 
+                    &copy; Copyright {(new Date()).getFullYear()} &nbsp;&mdash;&nbsp; <a href="https://marcgreyling.tech" target="_blank">Marc Greyling</a>
                 </Footer>
                 <FloatButton.BackTop />
             </Layout>
